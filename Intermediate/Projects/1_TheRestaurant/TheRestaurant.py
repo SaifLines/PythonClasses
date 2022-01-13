@@ -14,44 +14,6 @@ menu = {  "appetizers": {
 
 
 
-def display_menu(menu):
-    for section in menu:
-        print(f"---------- {section.upper()} ----------")
-        print()
-        for subsection in menu[section]:
-            print(f"*** {subsection} ***")
-            for item in menu[section][subsection]:
-                
-                if len(item) <7:
-                    print(f"{item} \t\t\t{menu[section][subsection][item]}")
-                elif len(item)<15:
-                    print(f"{item} \t\t{menu[section][subsection][item]}")
-                else:
-                    print(f"{item} \t{menu[section][subsection][item]}")
-            print()
-        print()
-        print()
-
-client_order={}
-print("WELCOME TO OUR RESTAURANT")
-display_menu(menu)
-
-print()
-print()
-for section in menu:
-    print(f"what kind of {section} do you want")
-    for subsection in menu[section]:
-        print(subsection)
-    subsection_answer = input("answer: ")
-    
-    for item in menu[section][subsection_answer]:
-        print(item)
-    item_choice = input("I would like to order : ")
-    client_order[item_choice] = menu[section][subsection_answer][item_choice]
-
-
-print(client_order)
-    
 
 
 
