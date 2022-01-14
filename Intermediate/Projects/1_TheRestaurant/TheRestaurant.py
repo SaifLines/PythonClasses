@@ -36,8 +36,6 @@ menu = {  "appetizers": {
 
 
 
-
-
 def display_menu(menu):
     for section in menu:
         print(f"---------- {section.upper()} ----------")
