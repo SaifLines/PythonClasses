@@ -14,6 +14,30 @@ menu = {  "appetizers": {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def display_menu(menu):
     for section in menu:
         print(f"---------- {section.upper()} ----------")
@@ -36,21 +60,21 @@ client_order={}
 print("WELCOME TO OUR RESTAURANT")
 display_menu(menu)
 
-print()
-print()
-for section in menu:
-    print(f"what kind of {section} do you want")
-    for subsection in menu[section]:
-        print(subsection)
-    subsection_answer = input("answer: ")
+# print()
+# print()
+# for section in menu:
+#     print(f"what kind of {section} do you want")
+#     for subsection in menu[section]:
+#         print(subsection)
+#     subsection_answer = input("answer: ")
     
-    for item in menu[section][subsection_answer]:
-        print(item)
-    item_choice = input("I would like to order : ")
-    client_order[item_choice] = menu[section][subsection_answer][item_choice]
+#     for item in menu[section][subsection_answer]:
+#         print(item)
+#     item_choice = input("I would like to order : ")
+#     client_order[item_choice] = menu[section][subsection_answer][item_choice]
 
 
-print(client_order)
+# print(client_order)
     
 
 
